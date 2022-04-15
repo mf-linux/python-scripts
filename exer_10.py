@@ -11,7 +11,14 @@
 
 idade = int(input('Informe a sua idade: '))
 
+
 if  idade >= 18:
-    print('Você é maior de idade')
+    msg = 'Você é maior de idade.'
 else:
-    print('Você é menor de idade')
+    msg = 'Você é menor de idade. '
+    if idade >= 16:
+        msg += 'Mas você já pode votar, regularize seu título.'
+
+
+print(msg)
+
