@@ -38,6 +38,6 @@ print('====')
 # Exibe as variáveis através da concatenação
 print('var = ' + str(var_i))                            # Para concatenar é preciso converter os dados para string
 
-# Exibe as variáveis por meio da expansão dentro da String
+# Exibe as variáveis por meio da expansão dentro da String Formatada
 print(f'var = {var_i}')                                 # Para expandir a string deve ser precedida pelo indicador f
                                                         #   e o nome da variável deve aparecer entre {}
