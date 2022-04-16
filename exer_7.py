@@ -19,3 +19,4 @@ print(x, '/', y, '=', x / y)                # Divisão
 print(x, '//', y, '=', x // y)              # Divisão inteira
 print(x, '%', y, '=', x % y)                # Resto da divisão
 print(x, '^', y, '=', x ** y)               # Exponenciação
+print(f'{x} ^ 1 / {2} = {x ** (1/2)}')      # Radiciação
