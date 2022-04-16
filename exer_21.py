@@ -47,5 +47,5 @@ for i in range(1, limite + 1, +1):
     if (i % 2) == 0:                                                  # par?
         print(cores[cor_par], i, cores['padrao'], end='')
     else:         
-        print(cores[cor_impar], i, cores['padrao'], end='')          # impar?
+        print(cores[cor_impar], i, cores['padrao'], end='')           # impar?
 print()
