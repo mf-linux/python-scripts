@@ -14,6 +14,9 @@ from abc import ABC, abstractmethod
 
 class Poligono(ABC):
 
+    def __str__(self) -> str:
+        return '{}: {}\nLados: {}'.format(self._classificacao, self._nome, self._lados)
+
     @abstractmethod
     def area(self) -> float:
         pass
@@ -30,6 +33,11 @@ class Poligono(ABC):
     @property
     @abstractmethod
     def classificacao(self) -> str:
+        pass
+
+    @property
+    @abstractmethod
+    def nome(self) -> str:
         pass
 
 class Quadrilatero(Poligono):
@@ -64,8 +72,11 @@ class Quadrilatero(Poligono):
     def lados(self, lados: list):
         self._lados = lados
 
-q = Quadrilatero((2, 4, 2, 4), 'Retangulo')
+q1 = Quadrilatero((2, 4, 2, 4), 'Retangulo')
+q2 = Quadrilatero((2, 2, 2, 2), 'Quadrado')
 
-print(q.area())
+
+print(q1, f'Área: {q1.area()}', sep='\n')
+print(q2, f'Área: {q2.area()}', sep='\n')
 
 
